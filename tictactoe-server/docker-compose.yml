@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  tictactoe-game:
+    container_name: tictactoe-game-server-container
+    image: tictactoe-game-server
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - /data/tictactoe-game-server
+    ports:
+      - '8080:8080'
