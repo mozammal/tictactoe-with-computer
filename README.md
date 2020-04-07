@@ -1,5 +1,5 @@
 # tictactoe-with-computer
-#how to run 
+# how to run 
 
 git clone https://github.com/mozammal/tictactoe-with-computer.git
 
@@ -13,6 +13,8 @@ cd ..
 
 cd tictactoe-client
 
+npm install
+
 npm start
 
-Enjoy beating me!!
+Enjoy beating the computer!
