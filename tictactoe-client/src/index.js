@@ -7,8 +7,9 @@ import App from './App';
 
 function Square(props) {
     return (
-        <button className="square" onClick={props.onClick}>
+        <button className={"square sqr"+props.num} onClick={props.onClick}>
             {props.value}
+            {/* {props.num} */}
         </button>
     );
 }
@@ -59,6 +60,7 @@ class Board extends React.Component {
         return (
             <Square
                 value={this.state.board[i]}
+                num={i}
                 onClick={() => this.handleClick(i)}
             />
         );
