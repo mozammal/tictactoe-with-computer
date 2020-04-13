@@ -75,6 +75,12 @@ ul {
     border-top: 4px solid rgb(94, 54, 54);
     border-left: 4px solid rgb(94, 54, 54);
 }
+.sign-X{
+    color: #bb3219;
+}
+.sign-O{
+    color: blueviolet;
+}
 .square--green {
     background: green;
 }

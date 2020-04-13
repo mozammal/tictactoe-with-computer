@@ -8,7 +8,7 @@ import App from './App';
 function Square(props) {
     return (
         <button className={"square sqr"+props.num} onClick={props.onClick}>
-            {props.value}
+            <span className={"sign-"+props.value}>{props.value}</span>
             {/* {props.num} */}
         </button>
     );
