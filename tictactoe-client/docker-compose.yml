@@ -1,16 +1,16 @@
-version: '3'
+version: '3.3'
 
 services:
 
-  sample:
-    container_name: tictactoefrontend
+  tictactoefront:
     build:
-      context: .
+      context: ./
       dockerfile: Dockerfile
+    stdin_open: true 
     volumes:
-      - '.:/app'
-      - '/app/node_modules'
+      - '.:/tictactoe-client'
+      - '/tictactoe-client/node_modules'
     ports:
       - '3001:3000'
     environment:
-      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
