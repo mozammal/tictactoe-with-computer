@@ -36,6 +36,7 @@ One way to stop this application is to use docker-compose from the command line
 (tested on ubuntu 18.04.1):
 
 ```shell
+cd  tictactoe-with-computer
 cd  tictactoe-client
 sudo docker-compose stop
 cd ..
