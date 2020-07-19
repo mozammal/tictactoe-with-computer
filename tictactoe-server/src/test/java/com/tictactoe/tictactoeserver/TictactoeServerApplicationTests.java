@@ -3,12 +3,10 @@ package com.tictactoe.tictactoeserver;
 import com.tictactoe.tictactoeserver.tictactoe.Algorithm;
 import com.tictactoe.tictactoeserver.tictactoe.AlphaBetaAlgorithm;
 import com.tictactoe.tictactoeserver.tictactoe.TreeNode;
-import jdk.nashorn.internal.AssertsEnabled;
 import org.assertj.core.api.Assertions;
 import org.hamcrest.CoreMatchers;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-import sun.nio.cs.Surrogate;
 
 @SpringBootTest
 class TictactoeServerApplicationTests {

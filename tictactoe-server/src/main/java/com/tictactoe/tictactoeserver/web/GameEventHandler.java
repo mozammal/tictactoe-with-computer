@@ -12,19 +12,9 @@ import org.springframework.stereotype.Component;
 public class GameEventHandler {
   private static final Logger logger = LoggerFactory.getLogger(GameEventHandler.class);
 
-  private SimpMessagingTemplate template;
-  private TicTacToeProperties properties;
-
-  public GameEventHandler(SimpMessagingTemplate template, TicTacToeProperties properties) {
-    this.template = template;
-    this.properties = properties;
-  }
-
-  public void findNextMoveByComputer(Board board) {
-
+  public Board findNextMoveByComputer(Board board) {
     TicTacToeGameEngine ticTacToeGameEngine = new TicTacToeGameEngine();
-    Board returnedBoard = ticTacToeGameEngine.TicTacToePlayedByComputer(board);
-    logger.info("board: {}", board.toString());
-    this.template.convertAndSend(properties.getBroker() + "/game.event", returnedBoard);
+    Board nextBoard = ticTacToeGameEngine.TicTacToePlayedByComputer(board);
+    return nextBoard;
   }
 }

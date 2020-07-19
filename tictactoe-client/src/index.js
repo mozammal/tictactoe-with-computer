@@ -94,7 +94,7 @@ class Board extends React.Component {
                     {this.renderSquare(7)}
                     {this.renderSquare(8)}
                 </div>
-                <SockJsClient url='http://localhost:8080/stomp' topics={['/topic/game.event']}
+                <SockJsClient url='http://localhost:8080/stomp' topics={['/user/queue/game.event']}
                               onMessage={(msg) => {
                                   this.updateState(msg.board);
                               }}

@@ -13,4 +13,5 @@ public class TicTacToeProperties {
   private String broker;
   private String endpoint;
   private String frontendUrl;
+  private String userPrefix;
 }
